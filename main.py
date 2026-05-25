@@ -11,7 +11,7 @@ dir = os.path.dirname(os.path.abspath(sys.argv[0]))
 
 ISRUN = False
 
-#time.sleep(5)
+time.sleep(5)
 pyautogui.hotkey("win", "d")
 time.sleep(0.7)
 im = pyautogui.screenshot("desktop.png")
@@ -60,18 +60,14 @@ def initiate(e):
         updateImg(8, 10)
         winsound.PlaySound(dir +'/windows-xp-distorted', winsound.SND_LOOP + winsound.SND_ASYNC)
         updateImg(9, 15)
+        time.sleep(5)
+        os.system("shutdown /s /t 1") #This will shutdown the computer after 1 second, you can change the time if you want or completely remove it if you don't want it to shutdown
 bgimage.bind("<Button-1>", initiate)
 
-keyboard.block_key('ctrl')
-keyboard.block_key('left ctrl')
-keyboard.block_key('right ctrl')
+
 keyboard.block_key('alt')
 keyboard.block_key('left alt')
 keyboard.block_key('right alt')
 keyboard.block_key('win')
-
-
-
-
 
 root.mainloop()
