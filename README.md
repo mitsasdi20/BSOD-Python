@@ -2,8 +2,6 @@
 
 <img width="1920" height="1080" alt="bsod1" src="https://github.com/user-attachments/assets/22ef0db1-009c-432e-9e4c-f0fff4e0e093" />
 
-# BSOD Prank
-
 Fullscreen fake Blue Screen of Death written in Python. Captures a screenshot of the desktop, displays it fullscreen, and on click runs through a sequence of fake BSOD images with matching sound effects. Strictly for pranks — not malware.
 
 ## How it works
